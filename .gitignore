@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# next.js build output
+.next/
+out/
+
+# env
+.env*
+
+# misc
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+
+# raw brand assets: originals are large (multi-MB photos, up to ~46MB videos).
+# Web-ready copies live in public/images and public/videos.
+brand-assets/
+
+# scratch previews
+scripts/preview-*.jpg
