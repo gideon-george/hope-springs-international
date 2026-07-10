@@ -19,3 +19,6 @@ brand-assets/
 
 # scratch previews
 scripts/preview-*.jpg
+
+# local tooling config (machine-specific paths)
+.claude/
