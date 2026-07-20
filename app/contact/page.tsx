@@ -3,6 +3,7 @@ import { MapPin, Phone, MessageCircle, Mail } from 'lucide-react';
 import {
   PHONE_DISPLAY,
   PHONE_E164,
+  WHATSAPP_DISPLAY,
   NIGERIA_OFFICE,
   US_OFFICE,
 } from '@/lib/site';
@@ -10,12 +11,13 @@ import { waLink } from '@/lib/whatsapp';
 import PageHero from '@/components/PageHero';
 import SectionHeading from '@/components/SectionHeading';
 import ContactForm from '@/components/ContactForm';
+import SocialLinks from '@/components/SocialLinks';
 import Reveal from '@/components/Reveal';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
   description:
-    'Reach Hope Springs International on WhatsApp or by phone (+234 809 100 9155), or visit our Nigeria field office in Gombe State or international HQ in Gallatin, Tennessee.',
+    'Reach Hope Springs International Nigeria on WhatsApp (+234 803 501 9426) or by phone (+234 809 100 9155), or visit our Nigeria field office in Gombe State or international HQ in Gallatin, Tennessee.',
 };
 
 const OFFICES = [NIGERIA_OFFICE, US_OFFICE];
@@ -44,15 +46,20 @@ export default function ContactPage() {
               office. Message us any time — or call during business hours.
             </p>
             <div className="mt-6 space-y-3">
-              <a
-                href={waLink()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-whatsapp w-full sm:w-auto"
-              >
-                <MessageCircle className="h-4 w-4" aria-hidden />
-                Chat on WhatsApp
-              </a>
+              <div>
+                <a
+                  href={waLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-whatsapp w-full sm:w-auto"
+                >
+                  <MessageCircle className="h-4 w-4" aria-hidden />
+                  Chat on WhatsApp
+                </a>
+                <p className="mt-1.5 text-xs text-slate-soft">
+                  Official WhatsApp: {WHATSAPP_DISPLAY}
+                </p>
+              </div>
               <div>
                 <a
                   href={`tel:${PHONE_E164}`}
@@ -62,7 +69,7 @@ export default function ContactPage() {
                   {PHONE_DISPLAY}
                 </a>
                 <p className="mt-1 pl-8 text-xs text-slate-soft">
-                  Official phone &amp; WhatsApp
+                  Official phone line
                 </p>
               </div>
               <div className="flex items-start gap-2.5 text-sm text-slate-soft">
@@ -71,6 +78,17 @@ export default function ContactPage() {
                 <span>
                   Email address coming soon — please use WhatsApp or phone for now.
                 </span>
+              </div>
+              <div className="pt-2">
+                <p className="text-sm font-semibold uppercase tracking-wider text-sky">
+                  Follow us
+                </p>
+                <div className="mt-3">
+                  <SocialLinks
+                    linkClassName="text-slate-soft hover:text-sky"
+                    iconClassName="h-6 w-6"
+                  />
+                </div>
               </div>
             </div>
           </Reveal>

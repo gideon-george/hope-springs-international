@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Phone, MessageCircle, MapPin } from 'lucide-react';
 import {
   SITE_NAME,
+  DBA_NAME,
   MOTTO,
   TAGLINE,
   PHONE_DISPLAY,
@@ -13,6 +14,7 @@ import {
   asset,
 } from '@/lib/site';
 import { waLink } from '@/lib/whatsapp';
+import SocialLinks from '@/components/SocialLinks';
 
 export default function Footer() {
   return (
@@ -29,10 +31,10 @@ export default function Footer() {
                 className="h-11 w-11"
               />
             </div>
-            <p className="font-heading text-lg font-bold leading-tight">
-              Hope Springs
-              <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-sky-light">
-                International
+            <p className="font-heading text-base font-bold leading-snug">
+              Hope Springs International Nigeria
+              <span className="block font-body text-[0.7rem] font-semibold text-sky-light">
+                {DBA_NAME}
               </span>
             </p>
           </div>
@@ -43,6 +45,9 @@ export default function Footer() {
             communities — sharing the love of God through clean water, education,
             and healthcare.
           </p>
+          <div className="mt-5">
+            <SocialLinks />
+          </div>
         </div>
 
         <nav aria-label="Footer">

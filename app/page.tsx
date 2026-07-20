@@ -46,7 +46,7 @@ export default function HomePage() {
             </p>
             <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link href="/get-involved/" className="btn-primary w-full sm:w-auto">
-                Donate Now
+                Get Involved
               </Link>
               <a
                 href={waLink()}

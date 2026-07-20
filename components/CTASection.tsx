@@ -20,7 +20,7 @@ export default function CTASection() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link href="/get-involved/" className="btn-on-dark w-full sm:w-auto">
-              Donate or Partner
+              Partner With Us
             </Link>
             <a
               href={waLink()}

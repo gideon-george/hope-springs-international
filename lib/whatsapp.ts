@@ -1,5 +1,5 @@
 // WhatsApp is the organisation's primary call to action.
-const WHATSAPP_NUMBER = '2348091009155';
+const WHATSAPP_NUMBER = '2348035019426';
 
 export const DEFAULT_MESSAGE =
   "Hi Hope Springs International! I'd like to get involved / support your work.";
@@ -15,5 +15,7 @@ export const WA_MESSAGES = {
     "Hi Hope Springs International! I represent an organisation interested in partnering with you. Let's talk.",
   volunteer:
     "Hi Hope Springs International! I'd like to volunteer my time and skills. How can I help?",
+  newsletter:
+    "Hi Hope Springs International! I'd like to subscribe to your newsletter and receive updates on your work.",
   general: DEFAULT_MESSAGE,
 };

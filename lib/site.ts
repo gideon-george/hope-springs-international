@@ -2,7 +2,9 @@
 // client's brief — do not add details (emails, account numbers, registration
 // numbers) that the organisation has not supplied.
 
-export const SITE_NAME = 'Hope Springs International';
+export const SITE_NAME = 'Hope Springs International Nigeria';
+// The organisation operates in Nigeria under a registered "Doing Business As" name.
+export const DBA_NAME = 'DBA Servants of Hope Initiative';
 export const MOTTO = 'Lasting change, One village at a time.';
 export const TAGLINE = 'Living Water Through Sustainable Skills.';
 
@@ -10,6 +12,9 @@ export const SITE_URL = 'https://gideon-george.github.io/hope-springs-internatio
 
 export const PHONE_DISPLAY = '+234 809 100 9155';
 export const PHONE_E164 = '+2348091009155';
+
+// The WhatsApp chat line is a separate number from the voice line.
+export const WHATSAPP_DISPLAY = '+234 803 501 9426';
 
 export const NIGERIA_OFFICE = {
   title: 'Nigeria Field Office',
@@ -40,5 +45,21 @@ export const NAV_LINKS = [
   { href: '/our-work/', label: 'Our Work' },
   { href: '/how-we-work/', label: 'How We Work' },
   { href: '/get-involved/', label: 'Get Involved' },
+  { href: '/gallery/', label: 'Gallery' },
   { href: '/contact/', label: 'Contact' },
+];
+
+export const SOCIAL_LINKS = [
+  {
+    label: 'Facebook',
+    href: 'https://www.facebook.com/share/1PMZpWz9Ps/?mibextid=wwXIfr',
+  },
+  {
+    label: 'X (Twitter)',
+    href: 'https://x.com/hopespringsint?s=21',
+  },
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/hopespringsintl?igsh=dWQ2enp4aDdhNHoy',
+  },
 ];

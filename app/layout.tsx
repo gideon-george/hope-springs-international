@@ -11,6 +11,7 @@ import {
   PHONE_E164,
   NIGERIA_OFFICE,
   US_OFFICE,
+  SOCIAL_LINKS,
 } from '@/lib/site';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
@@ -42,8 +43,10 @@ const orgJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'NGO',
   name: SITE_NAME,
+  alternateName: 'Servants of Hope Initiative',
   slogan: MOTTO,
   url: SITE_URL,
+  sameAs: SOCIAL_LINKS.map((social) => social.href),
   logo: `${SITE_URL}/images/logo.png`,
   telephone: PHONE_E164,
   areaServed: ['Nigeria', 'Africa'],
